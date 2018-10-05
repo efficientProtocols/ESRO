@@ -1,0 +1,88 @@
+==========================================================
+              Neda's Implementation of
+	Efficient Short Remote Operation Services (ESROS)
+
+     ESROS-FULL-SRC  Release 2.3
+
+==========================================================
+
+September 10, 1999 - Version 2.3
+
+Revision Info: $Id: README,v 1.2 2002/10/25 19:37:28 mohsen Exp $
+
+
+
+CONTENT
+-------
+
+This directory contains sources for:
+
+	- The ESROS Protocol Engine (src/esros/erop_eng)
+	- ESROS Test Tools
+
+and various other related programs and utilities.
+
+This is a Portable Software Package.
+
+Platform specifc executables are not included in
+this distribution. If needed tools (compiler, ...)
+are available, relevant executables can be generated.
+
+
+
+SUPPORTED CODE
+--------------
+
+Only the esro protocol engine and esros test tools in the 
+src/esros directory are regarded as SUPPORTED CODE.
+
+
+UNSUPPORTED CODE
+----------------
+
+All other software and tools included in this package
+which are not described as SUPPORTED CODE above are not
+supported through the maintenance agreement.
+
+
+
+
+LICENSED SOFTWARE
+-----------------
+
+The content of this package is licensed software.
+
+License for uses of this software with GPL-incompatible software
+(e.g., proprietary, non Free) can be obtained from Neda Communications, Inc.
+Visit http://www.neda.com/ for more information.
+
+Copyright for the contents of the esros directory are held by
+Neda Communications, Inc. 
+
+
+Release Notes and Documentation
+-------------------------------
+
+The release notes in ./relnotes directory
+contain complete information for building and running 
+this release of this software. 
+
+If you are not familiar with the build process or other features
+of this software distribution, start by reading the release notes.
+
+The Open C Platform (OCP) documentation describes all the general
+attributes of this software. It includes description of build
+procedure and requirements for the build environment.
+
+The ESRO Source document describes the design and implementation 
+aspects of Neda's implementation of ESRO protocol.
+
+
+
+--
+        Neda Communications, Inc.               tel: +1-425-644-8026
+        17005 S.E. 31st Place                   fax: +1-425-562-9591
+        Bellevue, Wa 98008                      E-Mail: mohsen@neda.com
+            U.S.A.                              URL: http://www.neda.com/
+
+

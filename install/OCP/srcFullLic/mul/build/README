@@ -1,0 +1,14 @@
+#
+
+Manual orderly use of kitBuild.sh
+
+
+1)
+ sh ./kitBuild.sh -a preDistBuild
+ ./kitBuild.sh -a preDistBuild
+
+2) 
+ sh ./kitBuild.sh -a distGenTar
+ ./kitBuild.sh -a distGenTar
+
+ sh ./kitBuild.sh -a distGenZip

@@ -1,0 +1,49 @@
+==========================================================
+              Neda's Open C Platform
+
+     OCP-FULL-SRC  Release 2.3
+
+==========================================================
+
+
+
+CONTENT
+-------
+
+This directory contains sources for:
+
+	- OCP
+
+and various other related programs and utilities.
+
+This is a Portable Software Package.
+
+Platform specifc executables are not included in
+this distribution. If needed tools (compiler, ...)
+are available, relevant executables can be generated.
+
+
+
+
+Release Notes and Documentation
+-------------------------------
+
+The release notes in ./relnotes directory
+contain complete information for building and running 
+this release of this software. 
+
+If you are not familiar with the build process or other features
+of this software distribution, start by reading the release notes.
+
+The Open C Platform (OCP) documentation describes all the general
+attributes of this software. It includes description of build
+procedure and requirements for the build environment.
+
+
+--
+        Neda Communications, Inc.               tel: +1-425-644-8026
+        17005 S.E. 31st Place                   fax: +1-425-562-9591
+        Bellevue, Wa 98008                      E-Mail: mohsen@neda.com
+            U.S.A.                              URL: http://www.neda.com/
+
+

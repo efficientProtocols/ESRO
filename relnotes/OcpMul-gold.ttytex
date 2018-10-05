@@ -1,0 +1,210 @@
+% Simple Report template
+
+\documentstyle[12pt,%ttyStyleFile%rcs]{article}
+%\documentstyle[12pt,rcs]{article}
+
+%       RCS: $Id: OcpMul-gold.ttytex,v 1.2 2002/03/22 01:26:41 mohsen Exp $
+
+\def\RcsEmptyValue{$\rm \langle Unknown \rangle$}
+\RCSdef $Revision: 1.2 $
+\RCSdef $Date: 2002/03/22 01:26:41 $
+
+% For CVS Tagging
+\RCSdef $Name:  $
+\RCSdef $Source: /usr/release/sw/sd/completePkgs/ocpMul.Pub/relnotes/OcpMul-gold.ttytex,v $
+\RCSdef $Author: mohsen $
+
+
+\begin{document}
+
+
+\author{Mohsen Banan}
+
+\date{\RCSDate}
+
+\title{Release Notes For OCP}
+
+
+\maketitle
+
+\section*{Release Information} 
+
+
+  The source of this Release Notes file is:\\
+ \RCSSource. 
+
+
+\section*{Binaries Tag Information} 
+
+
+\begin{verbatim}
+RELID-INFO-Product-Name:OCP-GOLD
+RELID-INFO-Rev-Number:$Revision: 1.2 $
+RELID-INFO-Rel-Date:$Date: 2002/03/22 01:26:41 $
+RELID-INFO-CVS-Tag:$Name:  $
+\end{verbatim}
+
+\section*{Second Binaries Tag Information} 
+
+%NOTYET , this is not right, instead the tags should 
+% come from the target file information
+\begin{verbatim}
+R#ELID_PROD_NAME=%RELID_PROD_NAME%
+R#ELID_REVNUM=%RELID_REVNUM%
+R#ELID_Rel_Date=%RELID_Rel_Date%
+R#ELID_CVS_Tag=%RELID_CVS_Tag%
+RELID_BUILD_DATE=%RELID_BUILD_DATE%
+RELID_BUILD_USER=%RELID_BUILD_USER%
+RELID_BUILD_HOST=%RELID_BUILD_HOST%
+RELID_BUILD_DIR=%RELID_BUILD_DIR%
+targetProd=%targetProd%
+targetProdName=%targetProdName%
+targetReleaseNotesFile=%targetReleaseNotesFile%
+targetProdFlavor=%targetProdFlavor%
+targetOS=%targetOS%
+targetArchType=%targetArchType%
+targetProdStatus=%targetProdStatus%
+\end{verbatim}
+
+\section*{Summary}
+
+\begin{itemize}
+\item This is the first public beta release.
+\end{itemize}
+
+
+\clearpage
+
+% Mohsen Banan: This fixes the trouble with Table of Contents.
+\parskip        0pt
+
+\tableofcontents
+
+\parskip        12pt
+
+\clearpage
+
+
+
+\section{Module Description} 
+
+Open C Platform (OCP) is a simple virtualization layer.
+
+\section{Todo List/Preview of Coming Attractions}
+
+\begin{itemize}
+\item
+        Fix ``To:'' line mis-configuration.
+
+\item
+        Configure TM (Trace Module) through the standard ini file.
+\item
+        Configure EH (Exception Handling) through the standard ini file.
+\end{itemize}
+
+
+\section{Known Problems}
+
+\begin{itemize}
+\item
+	Nothing Major
+\end{itemize}
+
+Refer to the bug tracking system for a detailed list.
+
+\section{Windows CE Build Procedures}
+
+There are four parts in updating the software (MIPS or SH3):
+
+\begin{itemize}
+\item Pre-build on UNIX station.
+\item Build for MIPS and SH3 on NT
+\item InstallShield generation on NT station.
+\item Web Install on UNIX station.
+\end{itemize}
+
+For the purpose of this example, MIPS is built first.
+After finishing building the MIPS, we'll build the SH3.  We need to do {\bf cleanall.sh} first before proceed into building the SH3. Then continue the process from step 6 in section {\bf Preparation using the UNIX station}.
+
+\subsection{Pre-build on UNIX station}
+
+\begin{enumerate}
+
+\item Go to the directory where the {\bf ocpdevl.mul} is located.  For example: {\bf /dos/u/neda/devenv}.
+\item Move the previous version of {\bf ocpdevl.mul} to {\bf ocpdevl.mul-beta-1.x} where ``x'' is the version number -- {\bf mv ocpdevl.mul ocpdevl.mul-beta-1.x}
+\item Check out the {\bf ocpdevl.mul} file -- {\bf cvs checkout ocpdevl.mul}
+\item {\bf cd ocpdevl.mul}
+\item {\bf source sourceme.csh}
+
+\item {\bf cd ..}
+\item {\bf ./kitPrep.sh -d pre}.  This process will take few minutes.
+
+\end{enumerate}
+
+\subsection{Build for MIPS and SH3 on NT}
+
+This process can be done with emacs.
+
+\begin{enumerate}
+
+\item Make sure that you are in the {\bf ocpdevl.mul} directory -- {\bf /neda/devenv/ocpdevl.mul}
+\item {\bf . ./win32setenv.sh}
+\item {\bf cd src}
+\item {\bf ./buildall.sh 1> Bout.sh3 2>\&1 \&}. The ouput is saved in {\bf Bout.sh3} file.  To monitor the ouput, use the tail command -- {\bf tail Bout.sh3}.
+\item Visit the {\bf Bout.sh3} file and check if there are errors.  There should be only three errors shown in the output file.
+
+\end{enumerate}
+
+\subsection{InstallShield generation on NT station}
+
+\begin{enumerate}
+
+\item {\bf cd ../install/wce/build}
+\item {\bf ./kitBuild.sh}
+
+\end{enumerate}
+
+\subsection{Web Install on UNIX station}
+
+\begin{enumerate}
+
+\item Make sure you are in {\bf neda/devenv/ocpdevl.mul} directory.
+\item {\bf ./kitPrep.sh -d install}
+
+\end{enumerate}
+
+
+\section{RCS Log}
+
+\begin{verbatim}
+$Log: OcpMul-gold.ttytex,v $
+Revision 1.2  2002/03/22 01:26:41  mohsen
+Mohsen's minor cleanups.
+
+# Revision 1.1  1999/11/15  00:25:56  mohsen
+# Gerneral Cleanups.
+#
+Revision 1.3  1999/09/28 04:01:42  mohsen
+Mohsen's NT prep and cleanups.
+
+Revision 1.2  1999/09/28 01:36:44  mohsen
+Mohsen's NT prep and cleanups.
+
+Revision 1.1  1999/09/25 21:07:01  mohsen
+New target.sh conventions.
+
+Revision 1.4  1998/06/26 19:04:41  mohsen
+Changed the real date.
+
+Revision 1.3  1998/03/26 20:09:54  mohsen
+Minor edits and verifications.
+
+Revision 1.2  1998/03/26 01:19:57  mohsen
+Minor edits and verifications.
+
+Revision 1.1  1998/03/24 22:46:55  mohsen
+Pre Public Beta Release.
+\end{verbatim}
+
+\end{document}             % End of document.
+

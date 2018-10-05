@@ -1,0 +1,149 @@
+% Simple Report template
+
+\documentstyle[12pt,%ttyStyleFile%rcs]{article}
+%\documentstyle[12pt,rcs]{article}
+
+%       RCS: $Id: ocp-srcFullPub-mul-gold.ttytex,v 1.2 2002/03/22 01:26:41 mohsen Exp $
+
+\def\RcsEmptyValue{$\rm \langle Unknown \rangle$}
+\RCSdef $Revision: 1.2 $
+\RCSdef $Date: 2002/03/22 01:26:41 $
+
+% For CVS Tagging
+\RCSdef $Name:  $
+\RCSdef $Source: /usr/release/sw/sd/completePkgs/ocpMul.Pub/relnotes/ocp-srcFullPub-mul-gold.ttytex,v $
+\RCSdef $Author: mohsen $
+
+
+\begin{document}
+
+
+\author{Mohsen Banan}
+
+\date{\RCSDate}
+
+\title{Release Notes For OCP-srcFullPub Product}
+
+
+\maketitle
+
+\section*{Release Information} 
+
+
+  The source of this Release Notes file is:\\
+ \RCSSource. 
+
+\section*{Binaries Tag Information} 
+
+\begin{verbatim}
+RELID-INFO-Product-Name:OCP-srcFullPub
+RELID-INFO-Rev-Number:$Revision: 1.2 $
+RELID-INFO-Rel-Date:$Date: 2002/03/22 01:26:41 $
+RELID-INFO-CVS-Tag:$Name:  $
+\end{verbatim}
+
+\section*{Second Binaries Tag Information} 
+
+
+%NOTYET , this is not right, instead the tags should 
+% come from the target file information
+\begin{verbatim}
+RELID_PROD_NAME=%RELID_PROD_NAME%
+RELID_REVNUM=%RELID_REVNUM%
+RELID_Rel_Date=%RELID_Rel_Date%
+RELID_CVS_Tag=%RELID_CVS_Tag%
+RELID_BUILD_DATE=%RELID_BUILD_DATE%
+RELID_BUILD_USER=%RELID_BUILD_USER%
+RELID_BUILD_HOST=%RELID_BUILD_HOST%
+RELID_BUILD_DIR=%RELID_BUILD_DIR%
+targetProd=%targetProd%
+targetProdName=%targetProdName%
+targetReleaseNotesFile=%targetReleaseNotesFile%
+targetProdFlavor=%targetProdFlavor%
+targetOS=%targetOS%
+targetArchType=%targetArchType%
+targetProdStatus=%targetProdStatus%
+\end{verbatim}
+
+\section*{Summary}
+
+\begin{itemize}
+\item This is release  of OCP-FULL-SRC product.
+\end{itemize}
+
+
+\clearpage
+
+% Mohsen Banan: This fixes the trouble with Table of Contents.
+\parskip        0pt
+
+\tableofcontents
+
+\parskip        12pt
+
+\clearpage
+
+\section{Build Procedures}
+
+Refer to the OCP document for details of
+the required tools for building of OCP programs and 
+libraries.
+
+Both NT and Solaris builds are supported through provided tools.
+
+\subsection{NT Build Procedures}
+
+- Edit the win32setenv.sh script to 
+  identify location of tools in your 
+  development environment.
+
+- source "." win32setenv.sh
+
+- From the top distribution directory:
+  sh recBuild.sh 
+
+\subsection{Solaris Build Procedures}
+
+- Edit the sourceme.csh script to 
+  identify location of tools in your 
+  development environment.
+
+- source sourceme.csh.
+
+- From the top distribution directory:
+  sh recBuild.sh
+
+
+\section{Known Problems}
+
+\begin{itemize}
+\item
+	Use of TM and LOG modules is not always consistent.
+\end{itemize}
+
+Refer to the bug tracking system for a detailed list.
+
+
+\section{RCS Log}
+
+\begin{verbatim}
+$Log: ocp-srcFullPub-mul-gold.ttytex,v $
+Revision 1.2  2002/03/22 01:26:41  mohsen
+Mohsen's minor cleanups.
+
+# Revision 1.1  1999/11/15  00:25:57  mohsen
+# Gerneral Cleanups.
+#
+Revision 1.4  1999/10/05 18:12:03  mohsen
+General Cleanups.
+
+Revision 1.3  1999/10/04 07:59:00  mohsen
+General Cleanups.
+
+Revision 1.2  1999/09/28 01:36:06  mohsen
+Mohsen's NT prep and cleanups.
+
+\end{verbatim}
+
+\end{document}             % End of document.
+

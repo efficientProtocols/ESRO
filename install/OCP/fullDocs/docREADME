@@ -1,0 +1,9 @@
+The documentation is installed in web-readable format in the directory
+in which you chose to unpack the files.
+
+To view the documents, run the browser of your choice pointed to
+
+	file:/yourdirectory/index.html
+
+... substituting the correct value of 'yourdirectory', of course.
+

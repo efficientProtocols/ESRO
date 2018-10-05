@@ -1,0 +1,47 @@
+You can build the examples and your own code either with the Neda tools using the
+supplied Makefiles with Opus Make 6.0, or you can use the Visual C++ integrated
+development environment (version 6.0 or above).
+
+
+Building using the Neda tools 
+
+Assuming you've unpacked the distribution into $(YOURDIR):
+
+	cd $(YOURDIR)
+
+	. ./win32setenv.sh
+
+	cd examples/ops_xmpl.cb
+
+	sh ./buildall.sh
+
+
+Building using the Visual C++ IDE
+
+
+Use the files 
+
+
+	invoker/invoker.dsw 
+
+
+and
+
+	performer/performer.dsw
+
+
+in
+
+	$(YOURDIR)/examples/ops_xmpl.cb
+
+
+NOTES ON A WEIRDNESS IN THE VISUAL C++ IDE
+
+The first time you build either of the examples, the Visual C++ IDE environment fails to
+perform a correct link. There are some 28 undefined references. But by simply running
+'Build' a second time, the link works.
+
+Seems like anomalous behavior to us. Check with Microsoft.
+
+
+

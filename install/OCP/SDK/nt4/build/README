@@ -1,0 +1,11 @@
+#
+
+use of kitBuild.sh:
+
+
+	sh ./kitBuild.sh 
+
+This builds self-extracting zip ../dist/esrosSDK.exe for NT.
+
+
+
