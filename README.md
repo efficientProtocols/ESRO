@@ -17,3 +17,16 @@ http://mohsen.1.banan.byname.net/content/generated/doc.free/neda/PLPC/110303/cur
 http://www.neda.com/PLPC/110302
 
 http://www.neda.com/content/generated/doc.free/neda/PLPC/110302/current/main.pdf
+
+# ESRO Protocol -- RFC-2188
+
+https://tools.ietf.org/html/rfc2188
+
+AT&T/Neda's Efficient Short Remote Operations (ESRO)
+Protocol Specification Version 1.2
+
+# Authors:
+
+Mohsen Banan -- http://mohsen.banan.1.byname.net/
+
+Neda Communications, Inc. -- http://www.neda.com
