@@ -10,3 +10,10 @@ http://mohsen.1.banan.byname.net/PLPC/110301
 http://www.neda.com/PLPC/110303
 
 http://mohsen.1.banan.byname.net/content/generated/doc.free/neda/PLPC/110303/current/main.pdf
+
+
+# ESROS API: Efficient Short Remote Operations Service Application Programming Interface
+
+http://www.neda.com/PLPC/110302
+
+http://www.neda.com/content/generated/doc.free/neda/PLPC/110302/current/main.pdf
